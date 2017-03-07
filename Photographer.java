@@ -14,4 +14,8 @@ public class Photographer{
   public void addCamera(Camera camera){
     cameras.add(camera);
   }
+
+  public void removeCamera(){
+    cameras.remove(countCameras() - 1);
+  }
 }
