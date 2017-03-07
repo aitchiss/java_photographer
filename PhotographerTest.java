@@ -31,4 +31,14 @@ public class PhotographerTest{
     photographer.removeCamera();
     assertEquals(0, photographer.countCameras());
   }
+
+  @Test
+  public void DigitalCameraPrintsDetails(){
+    assertEquals("Canon: X22", camera1.printDetails());
+  }
+
+  @Test
+  public void AnalogueCameraPrintsDetails(){
+    assertEquals("Panasonic: HY-324", camera2.printDetails());
+  }
 }
