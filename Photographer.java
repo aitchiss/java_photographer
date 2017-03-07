@@ -10,4 +10,8 @@ public class Photographer{
   public int countCameras(){
     return cameras.size();
   }
+
+  public void addCamera(Camera camera){
+    cameras.add(camera);
+  }
 }
