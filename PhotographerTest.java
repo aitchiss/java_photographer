@@ -48,4 +48,10 @@ public class PhotographerTest{
     photographer.addCamera(camera2);
     assertEquals("Canon: X22, Panasonic: HY-324", photographer.printCollectionDetails());
   }
+
+  @Test
+  public void photographerHasJournal(){
+    photographer.addToJournal("12/02/17", 2);
+    assertEquals((Integer)2, photographer.getNumberOfPhotos("12/02/17"));
+  }
 }
